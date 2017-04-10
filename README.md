@@ -82,8 +82,8 @@ Then, update the `config/constans.js` files copy-paste key enable in `config/pri
 This repo is in relation with the following videos wich explain Service Worker:
 
 ## Service Worker: Overview
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WEcMfFIsl2M
+" target="_blank"><img src="http://img.youtube.com/vi/WEcMfFIsl2M/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
