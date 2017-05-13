@@ -1,65 +1,71 @@
 # Service Worker tutorial
 
 This project is an example on how to realize a Service Worker with the following features:
-<br>
--> CACHE files at the installation of your Service Worker
-<br>
--> CACHE & UPDATE files all files you download
-<br>
--> Web Push Notifications with Push API
 
-# frontend
+- Cache files at the installation of your Service Worker.
+- Cache & update files all files you download.
+- Web push notifications with push API.
+
+
+## Front-End
 In this directory there is four files.
 
-#### main.js
+**main.js**
+
 The file in order to install the Service Worker so you have to include it in HTML files and rewrite the correct path and filename of your Service Worker.
-<br>
-See the TODO comment line 3 in this file.
 
-#### service-worker1.js
+*See the TODO comment line 3 in this file.*
+
+**service-worker1.js**
+
 It's the file to make a simple CACHE in order to access at your application whithout connection.
-<br>
+
 Add your file you want to Cache
-<br>
-See the TODO comment line 16 in this file.
 
-#### service-worker2.js
+*See the TODO comment line 16 in this file.*
+
+**service-worker2.js**
+
 It's the file to make :
-1. CACHE & UPDATE in order to access at your application whithout connection.
-2. Web Push Notifications in order to receive notifications at any time.
+    1. Cache & update in order to access at your application whithout connection.
+    2. Web push notifications in order to receive notifications at any time.
 
+**web-push-notifications.js**
 
-#### web-push-notifications.js 
 If you want to use Web Notifications whith a VAPID KEY encryption so this file is linked with service-worker2.js
-<br>
-You have to put in your HTML files and rewrite the correct URL of your Web Push server.
-<br>
-See the TODO comment line 3 in this file.
-<br><br>
+
+You have to put in your HTML files and rewrite the correct URL of your web push server.
+
+*See the TODO comment line 3 in this file.*
+
 But also update the JQuery UI function wich manage a notification button subscription for client in your HTML files.
 
-# backend
+## Back-End
 
 This directory is a Express Web Push server example. You have to use it if you want Web Push Notification
 
-### Installation
-```
-npm i
-```
+___ 
 
-### Run server
-```
+## :package: Installation
+
+*Make sure you have NodeJS installed on your machine.*
+
+```bash
+npm i
+// and
 npm start
 ```
 
-### Send notifications
+
+## :speaker: Send notifications
+
 Open an application wich send API requests like: postman.
 And send a post request with:
-```
+```json
 Content-Type: application/json
 ```
 And in body request:
-```
+```json
 {
     "title": "It's test notifications",
     "body": "You have received a push message",
@@ -71,29 +77,19 @@ And in body request:
 }
 ```
 
-### Regenerate VAPID KEY
-If you want to regenerate encryption Key just run the following command
+**Regenerate VAPID KEY**
+
+If you want to regenerate encryption Key just run the following command.
+
 ```
 npm run generate
 ```
-Then, update the `config/constans.js` files copy-paste key enable in `config/private.key` and `config/public.key`
 
-# Tutorials
+Then, update the `config/constans.js` files copy-paste key enable in `config/private.key` and `config/public.key`.
+
+# :tv: Tutorials
 This repo is in relation with the following videos wich explain Service Worker:
 
-## Service Worker: Overview
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=WEcMfFIsl2M
-" target="_blank"><img src="http://img.youtube.com/vi/WEcMfFIsl2M/0.jpg" 
-alt="Service Worker Overview thumbnail" width="240" height="180" border="10" /></a>
-
-
-## Service Worker: Cache
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=iDCe6bT8U_Y
-" target="_blank"><img src="http://img.youtube.com/vi/iDCe6bT8U_Y/0.jpg" 
-alt="Service Worker Cache thumbnail" width="240" height="180" border="10" /></a>
-
-
-## Service Worker: Push Notifications
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="Service Worker Push Notifications thumbnail" width="240" height="180" border="10" /></a>
+- [Service Worker: Overview](https://youtu.be/WEcMfFIsl2M)
+- [Service Worker: Cache](https://youtu.be/iDCe6bT8U_Y)
+- [Service Worker: Push Notifications]() (Soon)
