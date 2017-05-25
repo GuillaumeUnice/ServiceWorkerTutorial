@@ -3,7 +3,7 @@
 This project is an example on how to realize a Service Worker with the following features:
 
 - Cache files at the installation of your Service Worker.
-- Cache & update files all files you download.
+- Cache & update all files you download.
 - Web push notifications with push API.
 
 
@@ -12,13 +12,13 @@ In this directory there is four files.
 
 **main.js**
 
-The file in order to install the Service Worker so you have to include it in HTML files and rewrite the correct path and filename of your Service Worker.
+It's the file to install the Service Worker so you have to include it in HTML files and rewrite the correct path and filename of your Service Worker.
 
 *See the TODO comment line 3 in this file.*
 
 **service-worker1.js**
 
-It's the file to make a simple CACHE in order to access at your application whithout connection.
+It's the file to make a simple CACHE in order to access at your application without connection.
 
 Add your file you want to Cache
 
@@ -27,24 +27,31 @@ Add your file you want to Cache
 **service-worker2.js**
 
 It's the file to make :
-    1. Cache & update in order to access at your application whithout connection.
+    1. Cache & update in order to access at your application without connection.
     2. Web push notifications in order to receive notifications at any time.
 
 **web-push-notifications.js**
 
-If you want to use Web Notifications whith a VAPID KEY encryption so this file is linked with service-worker2.js
+If you want to use Web Notifications with a VAPID KEY encryption (this file is linked with service-worker2.js)
 
 You have to put in your HTML files and rewrite the correct URL of your web push server.
 
 *See the TODO comment line 3 in this file.*
 
-But also update the JQuery UI function wich manage a notification button subscription for client in your HTML files.
+But also update the JQuery UI function which manage a notification button subscription for client in your HTML files.
 
 ## Back-End
 
 This directory is a Express Web Push server example. You have to use it if you want Web Push Notification
 
 ___ 
+## :package: Configuration
+
+**config/constants.js**
+
+It's the file wich define all constant you have to update mongoDB's URL
+
+*See the TODO comment line 7 in this file.*
 
 ## :package: Installation
 

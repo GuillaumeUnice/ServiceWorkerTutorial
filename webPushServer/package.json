@@ -1,0 +1,27 @@
+{
+  "name": "web-push-server-echyzen",
+  "version": "1.0.0",
+  "description": "A simple web push server in order to provide website notifications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "generate": "node generate-keys.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "echyzen",
+    "server",
+    "web-push"
+  ],
+  "author": "Echyzen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "json-parser": "^1.1.5",
+    "mongoose": "^4.8.0",
+    "urlsafe-base64": "^1.0.0",
+    "web-push": "^3.2.1"
+  },
+  "devDependencies": {}
+}
