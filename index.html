@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="icon" href="images/favicon.ico" />
+
+		<title>Echyzen PWA: The Web App Manifest</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css"><!--blood-->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="import" id="link_introduction" href="chapters/introduction.html">
+		<link rel="import" id="link_implementation" href="chapters/implementation.html">
+		<link rel="import" id="link_property" href="chapters/property.html">
+		<link rel="import" id="link_conclusion" href="chapters/conclusion.html">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="#e33a35">
+					<img src="images/pwa_scheme.png" style="border: none;" width="700px" alt="PWA scheme" />
+					<p>PWA: The Web App Manifest</p>
+				</section>
+				<section id="introduction"></section>
+				<section id="implementation"></section>
+				<section id="property"></section>
+				<section id="conclusion"></section>
+			</div>
+
+			<footer id="footer" class="animated-middle">
+				<ul class="icons">
+					<li><a href="https://github.com/GuillaumeUnice" class="icon" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UC2Y0v3L_J9wTFkkqnLuCDGg" class="icon" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="https://twitter.com/EchyzenWebsite" class="icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<!--<li><a href="https://vimeo.com/user13696089" class="icon" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+					<li><a href="https://uk.pinterest.com/guillaumeunice/" class="icon" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/guillaume-borg-0904b8a8" class="icon" target="_blank"><i class="fa fa-linkedin"></i></a></li>-->
+				</ul>
+			</footer>
+		</div>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/web_component/HTMLImports.min.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script>
+			document.addEventListener( 'HTMLImportsLoaded', function () {
+				document.getElementById("introduction").innerHTML = document.getElementById('link_introduction').import.body.innerHTML;
+				document.getElementById("implementation").innerHTML = document.getElementById('link_implementation').import.body.innerHTML;
+				document.getElementById("property").innerHTML = document.getElementById('link_property').import.body.innerHTML;
+				document.getElementById("conclusion").innerHTML = document.getElementById('link_conclusion').import.body.innerHTML;
+			})
+		</script>
+	</body>
+</html>

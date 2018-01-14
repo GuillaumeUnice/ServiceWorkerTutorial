@@ -1,0 +1,13 @@
+{
+  "name": "devops_tutorial",
+  "version": "1.0.0",
+  "description": "DevOps overview",
+  "homepage": "index.html",
+  "subdomain": "devops",
+  "keywords": ["devops, docker, javascript"],
+  "author": {
+    "name": "GuillaumeUnice",
+    "url": "https://www.youtube.com/c/EchyzenWebsite"
+  },
+  "license": "MIT"
+}
