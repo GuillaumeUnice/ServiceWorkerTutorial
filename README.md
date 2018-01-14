@@ -100,3 +100,7 @@ This repo is in relation with the following videos wich explain Service Worker:
 - [Service Worker: Overview](https://youtu.be/WEcMfFIsl2M)
 - [Service Worker: Cache](https://youtu.be/iDCe6bT8U_Y)
 - [Service Worker: Push Notifications](https://www.youtube.com/watch?v=YSQTIGM9fvc)
+- [PWA: The Web App Manifest](https://youtu.be/1RbDI6m8ss8)
+
+# Tutorial's Slides
+- [PWA: The Web App Manifest](https://guillaumeunice.github.io/ServiceWorkerTutorial/index.html#/)
